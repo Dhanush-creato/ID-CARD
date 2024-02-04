@@ -1,0 +1,98 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #121212;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: 300px;
+    background-color: rgb(244, 239, 239);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+    height: ;
+
+}
+.image-container{
+    width: 100%;
+    height: 250px;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    overflow: hidden;
+
+}
+.image-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.content{
+    padding: 24px 16px;
+
+}
+.profile{
+    font-size: 26px;
+    font-weight: 900;
+    margin-bottom: 4px;
+}
+.job{
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #ceac23;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+}
+.description{
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #9e9e9e;
+}
+.social{
+    width: 100%;
+    display: flex;
+    height:0;
+    border-top: 1px solid #cfcfcf;
+    transition: height 0.3s ease;
+    background-color: #c6c1c2;
+    
+    
+
+}
+.card:hover .social{
+    height: 65px;
+}
+.social .instagram{
+    --color:#ee5487;
+}
+.social .facebook{
+    --color:#1d0ba8;
+}
+.social .whatsapp{
+    --color:#3067e8;
+}
+.social >a {
+    font-size:20px;
+    padding: 20px;
+    color: var(--color);
+    flex: 1;
+}
+.social >a:not(:last-child){
+    border-right: 1px solid #b0aaaa;
+    
+}
+.social>a:hover{
+    background-color:var(--color);
+}
+.social>a:hover >i{
+    color: white;
+}
